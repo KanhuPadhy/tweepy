@@ -1,0 +1,9 @@
+# tweepy-example.py
+import tweepy
+results = tweepy.api.search(q='twython3k')
+for tweet in results :
+    print '       User:  @%s' % tweet,from.from_user
+    print '       Date: %s' % tweet.created_at
+    print '       Tweet:  %s'  % tweet.text
+    
+    
